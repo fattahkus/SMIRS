@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home._jenguk.__detail.DetailPasien"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:id="@+id/profileActiv">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnUpdate">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/rlProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lnProfile"
+                    android:background="@drawable/gradientbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_person"/>
+                    <TextView
+                        android:id="@+id/tvDetpasien"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pasien1"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="21sp"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="275dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:baselineAligned="false">
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dokter"
+                                android:textSize="20sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dr.Uswatun"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jam Jenguk"
+                                android:textSize="20sp"
+                                />
+                            <TextView
+                                android:id="@+id/tvDetJam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10:00 - 14:00"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnDetail"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlProfile"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_note" />
+
+                    <TextView
+                        android:id="@+id/tvDetDiagnostic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Kencing Manis"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_room" />
+
+                    <TextView
+                        android:id="@+id/tvDetRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Ruang Bougenvile NO.2"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_contact" />
+
+                    <TextView
+                        android:id="@+id/tvDetPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="+266 225 225"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_home"/>
+
+                    <TextView
+                        android:id="@+id/tvDetAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:lines="3"
+                        android:text="Jl.Dewi Sridjaja, Ds.Kasugengan Kdiul,\nKec.Depok Kab.Cirebon 45155"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnUpdate"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textColor="#fff"-->
+<!--        android:background="@drawable/buttonstyle"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Update"/>-->
+
+</RelativeLayout>

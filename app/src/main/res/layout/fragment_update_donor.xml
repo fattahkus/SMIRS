@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bottomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan Darah"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+        <EditText
+            android:id="@+id/bottomNote"
+            android:hint="AB/A/B/O"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:background="@drawable/backgroud_edt"
+            android:gravity="start"
+            android:layout_below="@id/bottomName"
+            android:padding="5dp"/>
+        <Button
+            android:id="@+id/bottomNewMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:text="Update Member"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroud_button"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/bottomNote"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+</LinearLayout>
